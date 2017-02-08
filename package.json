@@ -7,8 +7,7 @@
     "test": "webpack",
     "start": "webpack-dev-server",
     "clean": "rm -rf dist",
-    "build": "npm run clean && webpack",
-    "deploy": "npm run build && gh-pages -d dist -m \"Updates --skip-ci\""
+    "build": "npm run clean && webpack"
   },
   "repository": {
     "type": "git",
@@ -24,14 +23,17 @@
     "autoprefixer-core": "^5.1.11",
     "babel-core": "^5.2.17",
     "babel-loader": "^5.0.0",
-    "css-loader": "^0.15.1",
+    "css-loader": "^0.26.1",
     "ejs": "^2.3.1",
     "extract-text-webpack-plugin": "^0.8.1",
     "file-loader": "^0.8.4",
-    "gh-pages": "git://github.com/markdalgleish/gh-pages#cli-message",
     "node-libs-browser": "^0.5.0",
     "postcss-color-rebeccapurple": "^1.1.0",
-    "postcss-loader": "^0.4.3",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-modules-extract-imports": "^1.0.1",
+    "postcss-modules-values": "^1.2.2",
     "raw-loader": "^0.5.1",
     "react": "^0.13.3",
     "react-to-html-webpack-plugin": "^2.2.0",
@@ -39,5 +41,8 @@
     "url-loader": "^0.5.6",
     "webpack": "^1.9.10",
     "webpack-dev-server": "^1.9.0"
+  },
+  "dependencies": {
+    "@tencent/css-demo-module": "^1.0.2"
   }
 }
